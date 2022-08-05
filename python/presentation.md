@@ -2,24 +2,28 @@
 marp: true
 title: FizzBuzz
 theme: gaia
-style: @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
+style: @import url('./css/tailwindcss.css');
+
 ---
-1. 自我介绍
-2. 什么是FizzBuzz
-3. 知识点
-    1. 编程技术
 
-    2. 课堂练习
-    2. 编程思维
 
-5. 总结
+---
+<!-- paginate: true -->
+## 课堂内容
+
+* 自我介绍
+* 游戏介绍
+* 技术要点
+* 游戏实现
+* 课堂总结
 
 ---
 
 ## 自我介绍
 
-姓名： 梁明浩
-爱好：
+姓名：梁明浩
+爱好：编程、游戏、电影、读书
+
 
 ---
 
@@ -216,7 +220,7 @@ FizzBuzz
 for i in range(1,16):
     output = ""
     if i % 3  == 0:
-        output = "Fizz"
+        output  = "Fizz"
     if i % 5  == 0:
         output += "Buzz"
     
@@ -255,9 +259,10 @@ FizzBuzz
 for i in range(1,16):
     output = ""
     if i % 3  == 0:
-        output = "Fizz"
+        output  = "Fizz"
     if i % 5  == 0:
         output += "Buzz"
+
     print(output or i)
 ```
 </div>
@@ -277,22 +282,46 @@ for i in range(1,16):
 </div>
 
 ---
-##  代码实例 (进一步优化)
+##  代码实例 (进一步优化?)
 
 <div class="grid grid-cols-2 gap-4">
 <div>
 
 ```python
 for i in range(1,16):
-    output = "fizz" if i % 3 == 0 else ""
-    output += "buzz" if i % 5 == 0 else ""
+    output  = "fizz" if (i % 3 == 0) else ""
+    output += "buzz" if (i % 5 == 0) else ""
+    
     print(output or i)
 ```
+运用三元操作符精简代码
+
+程序运行逻辑更清晰
+
 </div>
+
+
 <div>
 
 ```python
 for i in range(1,16):
     print( ("fizz" * (i % 3 == 0) + "buzz"*(i % 5 == 0)) or i)
 ```
+<br>
+<br>
+<br>
+运用字符串操作技巧，进一步精简代码
+
+但是逻辑不直观
+
 </div>
+
+---
+
+## 课堂总结
+
+* ```for``` 循环
+* ```%``` 运算符取余数
+* ```if-elif-else``` 条件判断
+* 条件判断的优先级
+* 程序的可扩展性和可读性

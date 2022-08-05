@@ -39,3 +39,5 @@ def solution4(num):
 
 for n in range(101):
     print(solution1(n),solution0(n))
+
+    

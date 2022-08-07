@@ -190,7 +190,7 @@ FizzBuzz
 </div>
 
 ---
-##  代码实例(改正)
+##  代码实例（改正）
 
 <div class="grid grid-cols-2 gap-4">
 <div>

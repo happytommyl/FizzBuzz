@@ -5,9 +5,20 @@ theme: gaia
 style: @import url('./css/tailwindcss.css');
 
 ---
+# 综合运用python知识
+<br>
 
+### 制作FizzBuzz小游戏
+
+<br>
+<br>
+<br>
+<br>
+<br>
+试讲人：梁明浩
 
 ---
+
 <!-- paginate: true -->
 ## 课堂内容
 
@@ -23,6 +34,14 @@ style: @import url('./css/tailwindcss.css');
 
 姓名：梁明浩
 爱好：编程、游戏、电影、读书
+
+---
+## 热身小游戏
+
+
+规则：
+1. 全班轮流报数
+2. 数到7的倍数要改为说“过”
 
 
 ---
@@ -51,7 +70,6 @@ for i in range(1,101):
 3
 ...
 ...
-97
 98
 99
 100
@@ -71,6 +89,7 @@ print(4%3)   ### 1
 print(5%3)   ### 2
 print(6%3)   ### 0
 ```
+
 
 </div>
 
@@ -171,7 +190,7 @@ FizzBuzz
 </div>
 
 ---
-##  代码实例
+##  代码实例(改正)
 
 <div class="grid grid-cols-2 gap-4">
 <div>
@@ -188,6 +207,8 @@ for i in range(1,16):
         print(i)
 
 ```
+注意```if```判断的优先级
+
 </div>
 <div>
 
@@ -213,6 +234,7 @@ FizzBuzz
 ---
 ##  代码实例 (优化)
 
+
 <div class="grid grid-cols-2 gap-4">
 <div>
 
@@ -227,6 +249,8 @@ for i in range(1,16):
     print(output or i)
 
 ```
+运用字符串拼接技巧
+增加程序的灵活性和扩展性
 </div>
 <div>
 
@@ -262,6 +286,9 @@ for i in range(1,16):
         output  = "Fizz"
     if i % 5  == 0:
         output += "Buzz"
+
+    # 可以增加更多的判断条件
+    # 而不破坏原本的程序结构
 
     print(output or i)
 ```
@@ -325,3 +352,7 @@ for i in range(1,16):
 * ```if-elif-else``` 条件判断
 * 条件判断的优先级
 * 程序的可扩展性和可读性
+
+---
+
+# 谢谢大家
